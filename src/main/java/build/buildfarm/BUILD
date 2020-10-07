@@ -432,7 +432,10 @@ container_image(
     files = [
         ":buildfarm-server_deploy.jar",
     ],
+<<<<<<< HEAD
     tags = ["no_windows"],
+=======
+>>>>>>> be1a321ee7760c9f69e6182c3412a710fa02c8ff
     visibility = ["//visibility:public"],
 )
 
@@ -521,7 +524,10 @@ container_image(
     files = [
         ":buildfarm-shard-worker_deploy.jar",
     ],
+<<<<<<< HEAD
     tags = ["no_windows"],
+=======
+>>>>>>> be1a321ee7760c9f69e6182c3412a710fa02c8ff
     visibility = ["//visibility:public"],
 )
 
