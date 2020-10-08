@@ -46,6 +46,12 @@ def buildfarm_init(name = "buildfarm"):
     Args:
       name: the name of the repository
     """
+
+    native.local_repository(
+        name = "googleapis",
+        path = "./third_party/googleapis/",
+    )
+
     maven_install(
         artifacts = [
                         "com.amazonaws:aws-java-sdk-autoscaling:1.11.729",

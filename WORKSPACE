@@ -8,6 +8,10 @@ load(":defs.bzl", "buildfarm_init")
 
 buildfarm_init()
 
+load(":googleapis.bzl", "googleapis")
+
+googleapis()
+
 load(":images.bzl", "buildfarm_images")
 
 buildfarm_images()

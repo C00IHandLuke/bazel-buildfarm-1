@@ -39,15 +39,6 @@ def archive_dependencies(third_party):
             "strip_prefix": "grpc-java-1.32.1",
             "urls": ["https://github.com/grpc/grpc-java/archive/v1.32.1.zip"],
         },
-
-        # The APIs that we implement.
-        {
-            "name": "googleapis",
-            "build_file": "%s:BUILD.googleapis" % third_party,
-            "sha256": "7b6ea252f0b8fb5cd722f45feb83e115b689909bbb6a393a873b6cbad4ceae1d",
-            "strip_prefix": "googleapis-143084a2624b6591ee1f9d23e7f5241856642f4d",
-            "url": "https://github.com/googleapis/googleapis/archive/143084a2624b6591ee1f9d23e7f5241856642f4d.zip",
-        },
         {
             "name": "remote_apis",
             "build_file": "%s:BUILD.remote_apis" % third_party,
